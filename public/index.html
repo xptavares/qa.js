@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>Guia Medico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="/js/commons.js"></script>
+	<script src="/js/index.js"></script>
+</head>
+
+	<body>
+		<div data-role="page" id="index">
+
+	        <div data-role="header">
+	            <h1>QA</h1>
+	        </div><!-- /header -->
+
+	        <div data-role="content">
+            <form>
+                <label for="text-basic">Text input:</label>
+                <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="number-pattern">Number + [0-9]* pattern:</label>
+                <input name="number" pattern="[0-9]*" id="number-pattern" value="" type="number">
+
+                <label for="date">Date:</label>
+                <input name="date" id="date" value="" type="date">
+
+                <label for="slider2">Flip switch:</label>
+                <select name="slider2" id="slider2" data-role="slider">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+
+                <div data-role="rangeslider">
+                    <label for="range-1a">Rangeslider:</label>
+                    <input name="range-1a" id="range-1a" min="0" max="100" value="40" type="range">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input name="range-1b" id="range-1b" min="0" max="100" value="80" type="range">
+                </div>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Checkboxes, vertical controlgroup:</legend>
+                    <input name="checkbox-1a" id="checkbox-1a" checked="" type="checkbox">
+                    <label for="checkbox-1a">Cheetos</label>
+                    <input name="checkbox-2a" id="checkbox-2a" type="checkbox">
+                    <label for="checkbox-2a">Doritos</label>
+                    <input name="checkbox-3a" id="checkbox-3a" type="checkbox">
+                    <label for="checkbox-3a">Fritos</label>
+                    <input name="checkbox-4a" id="checkbox-4a" type="checkbox">
+                    <label for="checkbox-4a">Sun Chips</label>
+                </fieldset>
+
+                <label for="select-choice-1" class="select">Select, native menu</label>
+                <select name="select-choice-1" id="select-choice-1">
+                    <option value="standard">Standard: 7 day</option>
+                    <option value="rush">Rush: 3 days</option>
+                    <option value="express">Express: next day</option>
+                    <option value="overnight">Overnight</option>
+                </select>
+
+                <a href="#" class="ui-btn ui-btn-inline">Anchor</a>
+                <button class="ui-btn ui-btn-inline">Button</button>
+            </form>
+				</ul>
+	        </div><!-- /content -->
+
+	    </div><!-- /page -->
+	</body>
+
+
+</body>
+</html>
